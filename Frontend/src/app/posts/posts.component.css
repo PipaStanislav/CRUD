@@ -1,0 +1,29 @@
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+  margin: 50px auto;
+  overflow: unset;
+}
+.demo-card-wide  {
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+.buttonEditDelitView {
+  position: absolute;
+  right: -170px;
+}
+
+.buttonEdit, .buttonDone {
+  margin: 0 5px;
+}
+
+.postLabel {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.postTextarea {
+  resize: none;
+  cursor: default;
+}

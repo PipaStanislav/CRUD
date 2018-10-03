@@ -1,0 +1,32 @@
+<!-- Wide card with share menu button -->
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" *ngIf="post" >
+
+  <!-- Simple Textfield -->
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <label class="mdl-textfield__label postLabel" >{{post.title}}</label>
+    </div>
+  </form>
+
+  <!-- Floating Multiline Textfield -->
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <textarea class="mdl-textfield__input postTextarea" type="text" rows= "3" id="sample5" readonly>{{post.description}}</textarea>
+    </div>
+  </form>
+
+
+  <div class="mdl-grid buttonEditDelitView">
+    <!-- Colored mini FAB button -->
+    <button routerLink="/edit/{{post._id}}" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored buttonEdit">
+      <i class="material-icons">backspace</i>
+    </button>
+
+    <button routerLink="/posts" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored buttonDone">
+      <i class="material-icons">done</i>
+    </button>
+  </div>
+
+
+</div>
